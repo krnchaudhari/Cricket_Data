@@ -20,7 +20,7 @@ display(gold_matchtype_df)
 
 # COMMAND ----------
 
-# DBTITLE 1,Venue wise Match Count
+# DBTITLE 1,Venue Wise Match Count
 gold_venue_df = silver_df.groupBy("venue").agg(count("*").alias("total_matches"))
 
 display(gold_venue_df) 
