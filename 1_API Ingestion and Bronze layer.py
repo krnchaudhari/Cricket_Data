@@ -22,7 +22,7 @@ base_path = "/Volumes/workspace/default/cricket_api_project"
 
 # DBTITLE 1,Calling Cricket API
 API_KEY = 'e3d54ae9-377b-4558-b83a-f39970992ef4'
-api_url = f"https://api.cricapi.com/v1/countries?apikey=e3d54ae9-377b-4558-b83a-f39970992ef4&offset=0"
+api_url = f"https://api.cricapi.com/v1/currentMatches?apikey={API_KEY}&offset=0"
 
 response = requests.get(api_url)
 response.raise_for_status()
